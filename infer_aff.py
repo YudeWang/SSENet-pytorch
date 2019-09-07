@@ -62,6 +62,8 @@ if __name__ == '__main__':
     parser.add_argument("--crf", default=False, type=bool)
 
     args = parser.parse_args()
+    if not os.path.exists(args.out_rw):
+        os.makedirs(args.out_rw)
 
     model = getattr(importlib.import_module(args.network), 'Net')()
 
