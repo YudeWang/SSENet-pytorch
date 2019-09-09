@@ -32,7 +32,7 @@ python make_cls_labels.py --voc12_root $your_voc12_root
 python train_cls_ser.py --voc12_root $your_voc12_root --weights $your_weights_file --session_name $your_session_name
 ```
 
-2. SSENet inference. Noting that the the crf results will be saved in `$your_crf_dir`+`_4.0` and `$your_crf_dir`+`_24.0`, where the parameters can be modified in `infer_cls_ser.py`. These two folders will be used further used in following AffinityNet training step.
+2. SSENet inference. Noting that the the crf results will be saved in `$your_crf_dir`+`_4.0` and `$your_crf_dir`+`_24.0`, where the parameters can be modified in `infer_cls_ser.py`. These two folders will be further used in following AffinityNet training step.
 
 ```
 python infer_cls_ser.py --weights $your_SSENet_checkpoint --infer_list [voc12/val.txt | voc12/train.txt | voc12/train_aug.txt] --out_cam $your_cam_dir --out_crf $your_crf_dir --out_cam_pred $your_pred_dir
