@@ -1,6 +1,6 @@
 # SSENet-pytorch
 
-The pytorch implementation of [Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentaion](). 
+The pytorch implementation of Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentaion. 
 
 ## Introduction
 As well-known, conventional CAM tends to be incomplete or over-activated due to weak supervision. Fortunately, we ﬁnd that semantic segmentation has a characteristic of spatial transformation equivariance, which can form a few self-supervisions to help weakly supervised learning. This work mainly explores the advantages of scale equivariant constrains for CAM generation, formulated as a self supervised scale equivariant network (SSENet). Extensive experiments on PASCAL VOC 2012 datasets demonstrate that our method achieves outstanding performance comparing with other state-of-the-arts.
@@ -64,7 +64,7 @@ Model | CAM step (mIoU) | CAM+rw step (mIoU) |           |
 :----:|:---------------:|:------------------:|:----------:|
 ResNet38 | 48.0 | 58.1 | AffinityNet cvpr submission|
 ResNet38 | 47.3 | 58.8 | reimplemented baseline |
-SSENet-ResNet38 | 49.8 | 62.1 | branch downsampling rate = 0.3  ([weights]())
+SSENet-ResNet38 | 49.8 | 62.1 | branch downsampling rate = 0.3  ([weights](https://drive.google.com/open?id=12CZil1LV8iq3Clj-xZCQlUhUWG1wOEt3))
 
 
 
