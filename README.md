@@ -1,6 +1,7 @@
 # SSENet-pytorch
 
 The pytorch implementation of Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentaion. 
+The paper will be posted on arxiv soon.
 
 ## Introduction
 ![CAMs visualization](https://github.com/YudeWang/SSENet-pytorch/blob/master/cams.png)
