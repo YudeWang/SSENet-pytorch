@@ -20,7 +20,7 @@ class Net(network.vgg16d.Net):
     def forward(self, x):
         N, C, H, W = x.size()
         x = super().forward(x)
-        x = self.dropout7(x)
+        x = self.drop7(x)
         x = self.fc8(x)
         x = F.interpolate(x,(H,W),mode='bilinear')
 
