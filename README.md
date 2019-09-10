@@ -1,7 +1,7 @@
 # SSENet-pytorch
 
-The pytorch implementation of Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentaion. 
-The paper will be posted on arxiv soon.
+The pytorch implementation of **Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentaion** ([https://arxiv.org/abs/1909.03714](https://arxiv.org/abs/1909.03714)). 
+
 
 ## Introduction
 ![CAMs visualization](https://github.com/YudeWang/SSENet-pytorch/blob/master/cams.png)
@@ -64,10 +64,22 @@ The generated pseudo labels are evaluated on PASCAL VOC 2012 train set.
 
 Model | CAM step (mIoU) | CAM+rw step (mIoU) |           |
 :----:|:---------------:|:------------------:|:----------:|
-ResNet38 | 48.0 | 58.1 | AffinityNet cvpr submission|
+ResNet38 | 48.0 | 58.1 | AffinityNet cvpr submission[1]|
 ResNet38 | 47.3 | 58.8 | reimplemented baseline |
 SSENet-ResNet38 | 49.8 | 62.1 | branch downsampling rate = 0.3  ([weights](https://drive.google.com/open?id=12CZil1LV8iq3Clj-xZCQlUhUWG1wOEt3))
 
-
-
+## Citation
+Please cite our paper if the code is helpful to your research.
+```
+@article{SSENet,
+    author = {Yude Wang and Jie Zhang and Meina Kan and Shiguang Shan and Xilin Chen},
+    title = {Self-supervised Scale Equivariant Network for Weakly Supervised Semantic Segmentation},
+    journal = {arXiv:1909.03714},
+    year = {2019}
+}
+```
+## Reference
+[1] J. Ahn and S. Kwak. Learning pixel-level semantic affinity
+with image-level supervision for weakly supervised semantic segmentation. In Proc. IEEE Conference on Computer
+Vision and Pattern Recognition (CVPR), 2018.
 
