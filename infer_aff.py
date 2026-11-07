@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
     model = getattr(importlib.import_module(args.network), 'Net')()
 
-    model.load_state_dict(torch.load(args.weights), strict=False)
+    model.load_state_dict(torch.load(args.weights, weights_only=True), strict=False)
 
     model.eval()
     model.cuda()
